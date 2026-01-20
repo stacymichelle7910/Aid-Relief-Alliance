@@ -372,17 +372,17 @@
 
   <header style="position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 80px 20px; min-height: 500px; color: white; text-align: center; overflow: hidden; background: #000;">
     <!-- Background Video (short ~30s humanitarian aid/relief montage, muted, looping) -->
-    <video 
-      autoplay 
-      muted 
-      loop 
-      playsinline 
-      style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translate(-50%, -50%); object-fit: cover; z-index: 1;"
-    >
-      <source src="https://youtu.be/pT51qFiKz1g" type="video/mp4">
-      <!-- Fallback image or color if video fails -->
-      Your browser does not support the video tag.
-    </video>
+    <video
+    autoplay
+    muted
+    loop
+    playsinline
+    style="position:absolute; top:50%; left:50%; min-width:100%; min-height:100%; width:auto; height:auto; transform:translate(-50%, -50%); object-fit:cover; z-index:1;"
+  >
+    <source src="/videos/background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
 
     <!-- Dark overlay for text readability -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.55); z-index: 2;"></div>
@@ -428,18 +428,6 @@
     <div style="max-width: 900px; margin: 0 auto;">
       <p style="margin-bottom: 20px; text-align: justify; font-size: 1.1em; line-height: 1.8;">
         <strong>AID RELIEF ALLIANCE</strong> is a dedicated global humanitarian organization founded in 2010, committed to alleviating suffering and fostering resilience in vulnerable communities worldwide. Our mission is to provide immediate emergency relief alongside long-term, sustainable development solutions in regions affected by natural disasters, conflict, poverty, and climate change.
-      </p>
-      <p style="margin-bottom: 20px; text-align: justify; font-size: 1.1em; line-height: 1.8;">
-        Operating in over 50 countries across Africa, Asia, the Middle East, Latin America, and Europe, <strong>AID RELIEF ALLIANCE</strong> collaborates with local organizations, governments, and international partners to ensure aid delivery is culturally sensitive, efficient, and impactful. Our approach prioritizes community involvement and local ownership for lasting change.
-      </p>
-      <p style="margin-bottom: 20px; text-align: justify; font-size: 1.1em; line-height: 1.8;">
-        The work of <strong>AID RELIEF ALLIANCE</strong> focuses on six core areas: emergency food assistance, medical and health services, education and child protection, clean water and sanitation, shelter and reconstruction, and community resilience programs. We emphasize empowerment through capacity building, gender equality, and innovative solutions such as mobile health clinics and solar-powered water systems.
-      </p>
-      <p style="margin-bottom: 20px; text-align: justify; font-size: 1.1em; line-height: 1.8;">
-        Driven by a diverse team of dedicated professionals, volunteers, and field experts, <strong>AID RELIEF ALLIANCE</strong> operates in some of the world's most challenging environments. Transparency and accountability guide our operations, and we adhere to international humanitarian standards while regularly publishing audited reports.
-      </p>
-      <p style="text-align: justify; font-size: 1.1em; line-height: 1.8;">
-        As global humanitarian needs continue to grow, <strong>AID RELIEF ALLIANCE</strong> remains committed to a vision of a world where no one is left behind. With the support of donors, partners, and volunteers, we have delivered millions of meals, provided life-saving medical care, rebuilt homes, and empowered future generations. Join us in creating lasting impact—together, we can build a more equitable and compassionate world.
       </p>
     </div>
   </section>
@@ -630,10 +618,10 @@
         <option value="quarterly">Quarterly donation</option>
       </select>
       <textarea id="message" placeholder="Your Message (optional)" rows="4"></textarea>
-      <button type="submit">Donate via Card (Paystack)</button>
+      <!-- <button type="submit">Donate via Card (Paystack)</button> -->
     </form>
     <div class="crypto-options">
-      <h3 style="text-align:center; margin:30px 0 20px;">Or Donate Crypto</h3>
+      <h3 style="text-align:center; margin:30px 0 20px;">Donate Crypto</h3>
       <div class="crypto-btn" onclick="copyToClipboard('bc1qjzt62teq4ymhmmgn2p2c6clxm2384v8mldan5s')">
         <i class="fab fa-bitcoin"></i> Bitcoin (BTC): bc1qjzt62teq4ymhmmgn2p2c6clxm2384v8mldan5s <i class="fas fa-copy"></i>
       </div>
@@ -646,6 +634,22 @@
   </section>
 
   <footer>
+    
+    <div class="footer-links">
+      <p style="margin-bottom: 20px; text-align: justify; font-size: 1.1em; line-height: 1.8;">
+        Operating in over 50 countries across Africa, Asia, the Middle East, Latin America, and Europe, <strong>AID RELIEF ALLIANCE</strong> collaborates with local organizations, governments, and international partners to ensure aid delivery is culturally sensitive, efficient, and impactful. Our approach prioritizes community involvement and local ownership for lasting change.
+      </p>
+      <p style="margin-bottom: 20px; text-align: justify; font-size: 1.1em; line-height: 1.8;">
+        The work of <strong>AID RELIEF ALLIANCE</strong> focuses on six core areas: emergency food assistance, medical and health services, education and child protection, clean water and sanitation, shelter and reconstruction, and community resilience programs. We emphasize empowerment through capacity building, gender equality, and innovative solutions such as mobile health clinics and solar-powered water systems.
+      </p>
+      <p style="margin-bottom: 20px; text-align: justify; font-size: 1.1em; line-height: 1.8;">
+        Driven by a diverse team of dedicated professionals, volunteers, and field experts, <strong>AID RELIEF ALLIANCE</strong> operates in some of the world's most challenging environments. Transparency and accountability guide our operations, and we adhere to international humanitarian standards while regularly publishing audited reports.
+      </p>
+      <p style="text-align: justify; font-size: 1.1em; line-height: 1.8;">
+        As global humanitarian needs continue to grow, <strong>AID RELIEF ALLIANCE</strong> remains committed to a vision of a world where no one is left behind. With the support of donors, partners, and volunteers, we have delivered millions of meals, provided life-saving medical care, rebuilt homes, and empowered future generations. Join us in creating lasting impact—together, we can build a more equitable and compassionate world.
+      </p>
+    </div>
+
     <div class="social-icons">
       <a href="https://wa.me/18648513830" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
       <a href="https://web.facebook.com/profile.php?id=61587029902272" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -653,23 +657,21 @@
       <a href="https://x.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
       <a href="https://www.youtube.com/@AIDRELIEFALLIANCE" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
     </div>
-    
+
     <div class="footer-links">
       <a href="#about">About Us</a>
       <a href="#projects">Our Work</a>
       <a href="#impact">Impact</a>
       <a href="#volunteer">Volunteer</a>
       <a href="#donate">Donate</a>
-      <a href="#" onclick="alert('Privacy policy page would go here')">Privacy Policy</a>
-      <a href="#" onclick="alert('Terms of service page would go here')">Terms of Service</a>
       <a href="mailto:aidreliefalliance@gmail.com">Contact Us</a>
     </div>
     
     <p style="margin-top: 30px; opacity: 0.8;">© 2026 Aid Relief Alliance. Saving Lives Worldwide.</p>
-    <p style="margin-top: 10px; opacity: 0.7; font-size: 0.9em;">Registered 501(c)(3) non-profit organization | EIN: 12-3456789</p>
+    <p style="margin-top: 10px; opacity: 0.7; font-size: 0.9em;">Registered 501(c)(3) Non-Profit Organization | EIN: 12-3456789</p>
   </footer>
 
-  <button id="whatsappBtn" onclick="window.open('https://wa.me/254700000000','_blank')" aria-label="Contact us on WhatsApp">
+  <button id="whatsappBtn" onclick="window.open('https://wa.me/18648513830','_blank')" aria-label="Contact us on WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </button>
 
